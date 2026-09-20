@@ -21,7 +21,7 @@ if not st.session_state.authenticated:
     st.markdown("### 请输入访问密码")
     password = st.text_input("密码", type="password")
     if st.button("进入"):
-        if password == "lft051203":
+        if password == "密码":
             st.session_state.authenticated = True
             st.rerun()
         else:
