@@ -19,7 +19,7 @@ if "authenticated" not in st.session_state:
 if not st.session_state.authenticated:
     st.title("AI Partner")
     st.markdown("### 请输入访问密码")
-    password = st.text_input("lft051203", type="password")
+    password = st.text_input("密码", type="password")
     if st.button("进入"):
         if password == "lft051203":
             st.session_state.authenticated = True
