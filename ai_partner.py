@@ -3,6 +3,7 @@ import os#调用大模型
 from openai import OpenAI#调用大模型
 from openai.types.beta import assistant
 from datetime import datetime
+from pathlib import Path
 
 st.set_page_config(
     page_title="AI Partner",
@@ -30,7 +31,7 @@ if not st.session_state.authenticated:
 
 st.title("AI Partner")
 
-st.logo("resource/logo.jpg")
+st.logo(str(Path(__file__).parent / "resource" / "logo.jpg"))
 
 # 侧边栏设置
 with st.sidebar:
